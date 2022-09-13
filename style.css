@@ -47,6 +47,11 @@ section {
     padding-bottom: 1rem;
 }
 
+#logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -79,8 +84,6 @@ ul {
 
 #makerFaire {
     background-image: url("maker.png");
-    width: 10vw;
-    padding-bottom: 10vw;
     background-size: contain;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -88,8 +91,6 @@ ul {
 
 #logoClub {
     background-image: url("logo archers.jpg");
-    width: 10vw;
-    padding-bottom: 10vw;
     background-size: contain;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -97,11 +98,14 @@ ul {
 
 #labo {
     background-image: url("labo.jpg");
-    width: 10vw;
-    padding-bottom: 10vw;
     background-size: contain;
     background-position-x: center;
     background-repeat: no-repeat;
+}
+
+figure div {
+    width: 15vw;
+    padding-bottom: 15vw;
 }
 
 figure {
@@ -109,6 +113,7 @@ figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 dt {
@@ -117,4 +122,39 @@ dt {
 
 dd {
     padding-left: 3em;
+}
+
+@media screen and (max-width: 850px) {
+    .line {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+
+    aside {
+        display: inline-block;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    figure div {
+        width: 30vw;
+        padding-bottom: 30vw;
+    }
+
+    #logo {
+        flex-direction: column;
+    }
 }
