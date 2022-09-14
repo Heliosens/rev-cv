@@ -34,7 +34,7 @@ h3 {
 section {
     margin: 2px;
     padding: 5px;
-    background-color: lightsteelblue;
+    background-color: #67a9ff;
     display: flex;
     flex-direction: column;
 }
@@ -53,17 +53,11 @@ section {
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
     position: fixed;
 }
 
-aside {
-    width: 10%;
-}
-
-#content {
-    width: 90%;
+#address div {
+    padding-bottom: 1em;
 }
 
 fieldset {
@@ -79,7 +73,16 @@ h2, dl {
 ul {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#study li {
+    width: 30%;
+}
+
+#training li {
+    width: 25%;
 }
 
 #makerFaire {
@@ -129,22 +132,6 @@ dd {
         flex-direction: column;
     }
 
-    nav {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: white;
-        flex-wrap: wrap;
-    }
-
-    aside {
-        display: inline-block;
-    }
-
-    #content {
-        width: 100%;
-    }
-
     figure {
         width: 100%;
     }
@@ -156,5 +143,9 @@ dd {
 
     #logo {
         flex-direction: column;
+    }
+
+    table {
+        display: flex;
     }
 }
