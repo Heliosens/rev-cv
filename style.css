@@ -16,15 +16,43 @@ h3 {
     font-size: 1em;
 }
 
-#home {
-    padding-top: 1rem;
+h1, a[href="#home"] {
+    color: #0000c8;
+}
+
+h2, #address div {
+    padding-bottom: .5em;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+a[href="#contact"], #contact h2 {
+    color: #0000ff;
+}
+
+a[href="#skills"], #skills h2 {
+    color: #0032ff;
+}
+
+a[href="#study"], #study h2 {
+    color: #0064ff;
+}
+
+a[href="#training"], #training h2 {
+    color: #0096ff;
+}
+
+a[href="#hobbies"], #hobbies h2 {
+    color: #00c8ff;
 }
 
 #picture {
     background-image: url("tauriel.jpg");
-    width: 10vw;
-    padding-bottom: 10vw;
-    background-size: contain;
+    width: 12vw;
+    padding-bottom: 12vw;
+    background-size: 80%;
     border-radius: 50%;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -32,11 +60,17 @@ h3 {
 }
 
 section {
-    margin: 2px;
-    padding: 5px;
-    background-color: #67a9ff;
+    margin: 2px 0;
+    padding: 1em;
+    background-color: #415a7e;
     display: flex;
     flex-direction: column;
+}
+
+#home {
+    padding-top: 1.8em;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .line {
@@ -44,7 +78,6 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-bottom: 1rem;
 }
 
 #logo {
@@ -53,11 +86,26 @@ section {
 }
 
 nav {
+    width: 100%;
     position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    font-weight: bold;
 }
 
-#address div {
-    padding-bottom: 1em;
+#skills div {
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    width: 25%;
+    border: 1px solid #00a9ff;
+}
+
+th, tr:nth-child(even) {
+    background-color: #00a9ff;
 }
 
 fieldset {
@@ -66,7 +114,7 @@ fieldset {
     padding: 1rem;
 }
 
-h2, dl {
+dl {
     margin-bottom: 1rem;
 }
 
